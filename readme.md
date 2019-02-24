@@ -3,12 +3,13 @@
 
 ## Follow steps to setup project
 
-- [Copy .env.example as .env using cmd copy .env.example .env].
-- [Generate application key using php artisan key:generate].
-- [Update your composer using command composer update in cmd].
-- [Setup your .env file].
-- [Migrate database using php artisan migrate].
-- Create Admin using tinker by following steps:
+- Copy .env.example as .env using cmd copy .env.example .env.
+- Generate application key using php artisan key:generate.
+- Update your composer using command composer update in cmd.
+- Setup your .env file.
+- Migrate database using php artisan migrate.
+
+# Create Admin using tinker by following steps
 	
 	-php artisan tinker
 	-$admin = new Admin
@@ -16,5 +17,6 @@
 	-$admin->email = 'Email of Admin'
 	-$admin->password = Hash::make('Password of Admin')
 	-$admin-save()
-- [Start laravel application using php artisan serve].
+
+# Start laravel application using php artisan serve.
 
