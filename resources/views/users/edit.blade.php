@@ -9,7 +9,7 @@
                 <div class="card-header" style="background: black;color: white;">Update details of {{ $userDetails->name }} <a style="float: right" href="/users">Go Back</a></div>
 
                 <div class="card-body">
-                      <form id="my_form" method="POST" action="/users/{{ $userDetails->id }}" enctype="multipart/form-data" novalidate="" >
+                      <form id="my_form" method="POST" action="/users/{{ $userDetails->id }}" enctype="multipart/form-data" novalidate="" onsubmit="return validateData();">
                         @csrf
                         {{ method_field('PUT') }}
 
