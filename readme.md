@@ -9,7 +9,7 @@
 - Setup your .env file.
 - Migrate database using php artisan migrate.
 
-# Create Admin using tinker by following steps
+## Create Admin using tinker by following steps
 	
 	-php artisan tinker
 	-$admin = new Admin
@@ -18,5 +18,6 @@
 	-$admin->password = Hash::make('Password of Admin')
 	-$admin-save()
 
-# Start laravel application using php artisan serve.
+## App is ready to run
+- Start laravel application using php artisan serve.
 
